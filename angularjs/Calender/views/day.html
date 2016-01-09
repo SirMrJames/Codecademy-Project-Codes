@@ -1,0 +1,10 @@
+<!-- Format a date so it displays in the format "Friday 1/16" -->
+<h2 class="date">{{ day.date | date:'EEEE d/M'}}</h2>
+
+
+<div class="event" ng-repeat="event in day.events">
+  <a href="#/{{$index}}" >
+    <h3 class="name"> {{event.name}} </h3>
+    <p><span class="from"> {{event.from | date:'EEEE d/M'}} </span> - <span class="to"> {{event.to | date:'EEEE d/M'}} </span></p>
+  </a>
+</div>
