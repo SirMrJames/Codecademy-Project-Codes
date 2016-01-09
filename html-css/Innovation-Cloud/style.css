@@ -1,0 +1,165 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.button{
+ padding: 10px;
+ border: 1px solid grey;
+ color: white;
+ border-radius: 5px;
+ text-decoration:none;
+ background-color: black;
+
+}
+
+.col { display:inline-block; }
+a:hover{
+ color: blue; 
+}
+.unique{
+ text-transform: uppercase;
+  text-align:center;
+ 
+}
+#imager{
+ float:left;
+  height:200px;
+  width:200px;
+}
+
+
+.nav ul li{
+display:inline-block;  
+ color:white;
+   padding:0 5px;
+ margin-right: 10px;
+  margin-left: 10px;
+}
+.nav{
+ background-color:black; 
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px; 
+	padding: 0 10px; 
+}
+
+
+/* Header */
+.header {
+  height: 800px;
+  text-align: center;
+   background:url( https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+.header .container {
+	position: relative;
+	top: 200px;
+}
+
+.header h1 {
+	font-size: 80px;
+	line-height: 100px; 
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+
+@media (min-width:850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p {
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+.btn:hover {
+	background: #117bff;
+	cursor: pointer; 
+	transition: background .5s;  
+}
+
+
+/* Nav */
+.nav ul {
+	list-style: none;
+	margin: 0 auto; 
+	padding: 30px 0;
+	text-align: center; 
+}
+
+
+/* Main */
+.main .container {
+	margin: 80px auto;
+}
+
+.footer{
+ background-color: black; 
+  color: white;
+  
+}
+/* Jumbotron */
+.jumbotron {
+	height: 600px; 
+	text-align: right;
+   background:url( https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  margin: 0px;
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 220px;
+}
+
+
+/* Footer */
+.footer { 
+	font-size: 14px;
+  text-align: center;
+  float:both;
+}
+.jumbotron a{
+
+  margin-right: 500px;;
+}
+.footer p{
+ margin:0px; 
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
